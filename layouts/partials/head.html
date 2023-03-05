@@ -15,10 +15,6 @@
 <link rel="stylesheet" href="{{ .link | absURL }} " />
 {{ end }} 
 
-{{ "<!-- Main Stylesheet -->" | safeHTML }} 
-{{ $styles := resources.Get "sass/main.scss" | resources.ToCSS }}
-<link rel="stylesheet" href="{{ $styles.Permalink }}" />
-
 
 <!-- CSS -->
 <!-- <link rel="stylesheet" href="/css/bootstrap.min.css" />
@@ -38,16 +34,3 @@
 <meta name="theme-color" content="{{ .Site.Params.assets.theme_color | default "#2e2e33" }}">
 
 
-<script
-type="text/javascript"> adroll_adv_id = "C5BGQGFNGVHVDDB43VKJTR"; adroll_pix_id = "4D2AHZ34GBFEDFLQIF4I2M"; adroll_version = "2.0"; (function (w, d, e, o, a) { w.__adroll_loaded = true; w.adroll = w.adroll || []; w.adroll.f = ['setProperties', 'identify', 'track']; var roundtripUrl = "https://s.adroll.com/j/" + adroll_adv_id + "/roundtrip.js"; for (a = 0; a < w.adroll.f.length; a++) { w.adroll[w.adroll.f[a]] = w.adroll[w.adroll.f[a]] || (function (n) { return function () { w.adroll.push([n, arguments]) } })(w.adroll.f[a]) } e = d.createElement('script'); o = d.getElementsByTagName('script')[0]; e.async = 1; e.src = roundtripUrl; o.parentNode.insertBefore(e, o); })(window, document); adroll.track("pageView"); </script>
-<script data-ad-client="ca-pub-4996597421343551" async
-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E7EMFH4HRW"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
-
-gtag('config', 'G-E7EMFH4HRW');
-</script>
