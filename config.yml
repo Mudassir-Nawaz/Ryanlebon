@@ -1,9 +1,9 @@
-baseURL: 'https://mudassir-nawaz.github.io/Ryanlebon/'
+baseURL: '/'
 languageCode: 'en-us'
 title: 'Ryan Lebon'
 
 params:
-    logo: "/images/logo.png"
+    logo: images/logo.png
     plugins:
         css:
         - link: css/bootstrap.min.css
@@ -11,6 +11,12 @@ params:
         - link: css/font-awesome.min.css
         - link: css/animate.css
         - link: themefisher-font/style.css
+
+    favicon: /images/logo.png
+    favicon16x16: /images/logo.png
+    favicon32x32: /images/logo.png
+    apple_touch_icon: /images/logo.png
+    safari_pinned_tab: /images/logo.png
 menus:
   main: # Main Menu
   - name: Home
