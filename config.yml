@@ -10,6 +10,7 @@ params:
         - link: css/main.css
         - link: css/font-awesome.min.css
         - link: css/animate.css
+        - link: themefisher-font/style.css
 menus:
   main: # Main Menu
   - name: Home
