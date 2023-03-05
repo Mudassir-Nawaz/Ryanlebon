@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{ $data := index .Site.Data }}
+
+<!-- Banner -->
+<div id="heading">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 text-center">
+                <h1 class="introduction">{{ .Params.bannerHeading }}</h1>
+                <h2 class="introduction">{{ .Params.bannerDiscription }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner End -->
+
+<!--about  Main -->
+{{ with $data.about.about }}
+<section id="main" class="wrapper11">
+    <div class="inner">
+        <div class="content mt-5">
+            <header>
+                <h2>{{ .title | markdownify }}</h2>
+                <img class="img-fluid my-5" src="{{ .image | absURL }}" alt="">
+            </header>
+            <p>{{ .paragraph | markdownify }}</p>
+            <div class="download_button my-4">
+                <!--              <a target="_blank" href="items/ryan_lebon_resume.pdf" class="button icon fa-download" download> Download Resume</a> -->
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+
+{{ with $data.about.work }}
+<section id="main" class="wrapper">
+    <div class="inner">
+        <div class="content">
+            <header>
+                <h2 class="my-5">{{ .title | markdownify }}</h2>
+            </header>
+            <style>
+                .container-50 {
+                    width: 50%;
+                }
+            </style>
+            <img class="container-50" src="{{ .image | absURL }}" alt="" />
+            <p>{{ .paragraph | markdownify }}</p>
+            <hr />
+            <h3>{{ .heading | markdownify }}</h3>
+            <p>{{ .item1 | markdownify }}</p>
+            <p>{{ .item2 | markdownify }}</p>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{ end }}

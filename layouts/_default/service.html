@@ -14,4 +14,164 @@
 </div>
 <!-- Banner End -->
 
+<!-- service section-->
+{{ with $data.service.service }}
+<section class="wrapper">
+    <div class="inner">
+        <!-- Calendly inline widget begin -->
+        <header class="special">
+            <h2>{{ .title | markdownify }}</h2>
+            <img src="../images/line_break.png" alt="">
+        </header>
+        <div class="highlights">
+            {{ range .offer_item }}
+            <section>
+                <div class="content">
+                    <header>
+                        <a href="#" class="{{ .icon }}"><span class="label">Development Icon</span></a>
+                        <h3>{{ .title | markdownify }}</h3>
+                    </header>
+                    <p>{{ .description | markdownify }}</p>
+                </div>
+            </section>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+<!-- service end-->
+
+
+<!-- 2nd service -->
+{{ with $data.service.service2 }}
+<section class="wrapper">
+    <div class="inner">
+
+        <section class="about-2 section bg-gray" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h2>{{ .title | markdownify }}</h2>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <p>{{ .description | markdownify }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section-xs" id="services">
+            <div class="container">
+                <div class="row">
+                    {{ range .service_item }}
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-block color-bg text-center">
+                            <div class="service-icon text-center">
+                                <i class="{{ .icon }}"></i>
+                            </div>
+                            <h3>{{ .title | markdownify }}</h3>
+                            <p>{{ .details | markdownify }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </section>
+        <section class="service-list section bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="title text-center">
+                            <h4>{{ .title2 | markdownify }}</h4>
+                            <h2>{{ .subtitle2 | markdownify }}</h2>
+                            <span class="border"></span>
+                            <p>{{ .details | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    {{ range .service2_item }}
+                    <div class="col-md-4">
+                        <div class="block h-100">
+                            <i class="{{ .icon }}"></i>
+                            <h3>{{ .title | markdownify }}</h3>
+                            <ul>
+                                {{ range .list }}
+                                <li>{{ .item }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </section>
+
+        <section class="service-2 section bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="title text-center">
+                            <h4>{{ .title3 | markdownify }}</h4>
+                            <h2>{{ .subtitle3 | markdownify }}</h2>
+                            <span class="border"></span>
+                            <p>{{ .details2 | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    {{ range .service3_item }}
+                    <div class="col-md-4 col-sm-6 p-0">
+                        <div class="service-item text-center h-100">
+                            <span class="count">{{ .count }}</span>
+                            <i class="{{ .icon }}"></i>
+                            <h4>{{ .title | markdownify }}</h4>
+                            <p>{{ .details | markdownify }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                    <div class="w-100"></div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+</section>
+{{ end }}
+
+<!-- Testimonials -->
+{{ with $data.service.testimonials }}
+<section class="wrapper">
+    <div class="inner">
+        <div class="inner_backup">
+            <header class="special">
+                <h2>{{ .title }}</h2>
+                <p>{{ .subtitle | markdownify }}:</p>
+            </header>
+            <div class="testimonials">
+                {{ range .testi_item }}
+                <section>
+                    <div class="content">
+                        <blockquote>
+                            <p>“{{ .content }}”</p>
+                        </blockquote>
+                        <div class="author">
+                            <!-- <div class="image">
+                                        <img src="images/pic01.jpg" alt="" />
+                                    </div> -->
+                            <p class="credit">- <strong>{{ .name }}</strong> <br /> <span>{{ .title }}
+                                    <br />{{ .company }}</span></p>
+                        </div>
+                    </div>
+                </section>
+                {{ end }}
+                
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+<!-- testimonials end -->
+
 {{ end }}

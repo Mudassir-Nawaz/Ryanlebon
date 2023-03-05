@@ -1,6 +1,6 @@
 ---
 title: 'Service' # in any language you want
-bannerHeading: "Service"
+bannerHeading: "Services"
 bannerDiscription: ""
 layout: service
 # url: "/archive"

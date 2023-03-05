@@ -1,8 +1,8 @@
 ---
 title: 'About' # in any language you want
-bannerHeading: "About"
+bannerHeading: "About Me"
 bannerDiscription: ""
-layout: service
+layout: about
 # url: "/archive"
 ---
  

@@ -1,0 +1,14 @@
+about:
+  title: About Me
+  image: images/profile_picture.jpg
+  paragraph: Hello and welcome to my personal website. I'm a DevOps Engineer with a focus on operational tasks, as well as collaborating with development teams to create software products with a more efficient software development life cycle through the use of CI/CD platforms. I hold a Bachelor's degree in Computer Science Software Engineering from CSUMB (California State University of Monterey Bay), and my areas of interest include DevOps Engineering, Software Engineering, Full Stack Design/Development, Automation Engineering, and Data Analytics. I'm experienced with several computer operating systems including Mac, Windows, and Linux. As an active learner with a growth mindset, I'm adaptable to different environments and enjoy taking on new challenges. The technologies I use daily include Docker, Jenkins, Kubernetes, Ansible, Helm, CI/CD Pipelines, SonarQube, Nagios, Configuration Management, Server Operations, and Web Development/Deployment. I also keep my skills fresh by programming in various languages such as Python, C++, C#, Javascript, and Groovy. I'm passionate about creating and improving full stack architectures while also ensuring my projects are secure and scalable through automation and machine learning. If you're interested in what I do or have a position available, please don't hesitate to contact me.
+
+
+
+work:
+  title: Why Work With Me?
+  image: images/collaboration.png
+  paragraph: Are you looking for a skilled DevOps Engineer who can help your team succeed in the tech industry? Look no further! I have the expertise and knowledge to help uplift your team, laying out a clear design path to build, scale, operate, and monitor your tech stack effectively.
+  heading: How I Can Help Organize and Progress Your Products
+  item1: As a DevOps Engineer, I will be able to push your project forward by finding and developing solutions to automate the testing, debugging, and deployment of your software. In this role, I will proactively contribute to solutions that diminish operational issues, help application developers build highly scalable applications, and increase productivity across all software initiatives.
+  item2: I am deeply passionate about implementing well-executed DevOps practices and techniques that will improve your team's software development lifecycle and create effective long-term solutions at your company. With my skills and expertise, I can help your team achieve greater success.
