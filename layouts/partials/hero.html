@@ -1,0 +1,13 @@
+<!-- Banner -->
+<div id="heading">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 text-center">
+                <h1 class="introduction">{{ .Params.bannerHeading }}</h1>
+                <h2 class="introduction">{{ .Params.bannerDiscription }}</h2>
+                {{ if .IsHome }}<img class="img-fluid mb-4" src="{{.Site.Params.homepage.bannerImage}}" alt="Iontra logo">
+                {{ else }}{{ end }}
+            </div>
+        </div>
+    </div>
+</div>

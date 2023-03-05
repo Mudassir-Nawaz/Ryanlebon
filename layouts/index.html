@@ -1,0 +1,91 @@
+{{ define "main" }}
+{{ $data := index .Site.Data }}
+
+<!-- Banner -->
+<div id="heading">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 text-center">
+                <h1 class="introduction">{{ .Params.bannerHeading }}</h1>
+                <h2 class="introduction">{{ .Params.bannerDiscription }}</h2>
+                <img class="img-fluid mb-4" src="{{.Params.bannerImage}}" alt="Iontra logo">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner End -->
+
+<!-- Technologies start -->
+{{ with $data.homepage.technologies }}
+<section class="Technologies pb-5">
+    <div class="inner">
+        <header class="special mt-5 pt-4">
+            <div class="flex border-2 border-white flex-col md:flex-row items-center">
+                <div class="flex flex-col space-y-6">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl text-center md:ml-[-20rem]">{{ .title | markdownify }}</h2>
+                    <h3 class="text-center md:text-left text-lg font-medium text-black">{{ .subtitle1st | markdownify }}<br>{{ .subtitle2nd | markdownify }}</h3>
+                </div>
+                <img src="images/line_break.png" alt="">
+            </div>
+        </header>
+
+        <div class="row">
+            {{ range .technology_item }}
+            <div class="col-md-3">
+                <header class="technology">
+                    <div class="image">
+                        <img src="{{ .image | absURL }}" alt="" />
+                    </div>
+                    <h3>{{ .title | markdownify }}</h3>
+                </header>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    </div>
+</section>
+<!-- Technologies end -->
+
+<!-- skill start -->
+{{ with $data.homepage.languages }}
+<section class="wrapper111">
+    <div class="inner">
+        <div class="backup">
+            <header class="special mt-5">
+                <h2>{{ .title | markdownify }}</h2>
+                <img src="images/line_break.png" alt="">
+            </header>
+            <div class="row">
+            {{ range .language_item }}
+                <div class="col-md-4">
+                    <div class="skill">
+                        <img src="{{ .image | absURL }}" alt="">
+                        <div class="skill-name">{{ .title | markdownify }}</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="{{ .percentage }}"></div>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+            </div>
+        </div>
+</section>
+{{ end }}
+
+<!-- skill end -->
+
+<!-- secure start -->
+{{ with $data.homepage.secure }}
+<section id="secure">
+    <div class="inner">
+        <div class="secure text-center">
+            <h2>{{ .title | markdownify }}</h2>
+            <h3 style="color:white">{{ .subtitle1st | markdownify }}<br /> {{ .subtitle2nd | markdownify }} <br /> By partnering with me, your business can benefit from a clear path to
+                maximize productivity. <br /> {{ .subtitle3rd | markdownify }} </h3>
+        </div>
+    </div>
+</section>
+{{ end }}
+    
+{{ end }}
+{{ end }}

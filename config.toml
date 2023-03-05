@@ -1,0 +1,20 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Ryan Lebon'
+
+
+# main menu
+[[menu.main]]
+name = "Home"
+URL = "/"
+weight = 2
+
+[[menu.main]]
+name = "About"
+URL = "/about/"
+weight = 3
+
+[[menu.main]]
+name = "Service"
+URL = "/service/"
+weight = 3

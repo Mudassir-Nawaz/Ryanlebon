@@ -1,0 +1,155 @@
+technologies:
+  enable : true
+  title : "Technologies I specialize in"
+  subtitle1st : "Below is a gallery of some of the technologies I work with."
+  subtitle2nd : "I am constantly learning and striving to add to this list, as these tools are among the best available."
+  technology_item:
+    # Loop technology
+    - title : "Kubernetes"
+      image : "images/kubernetes.png"
+
+    # Loop technology
+    - title : "Jenkins"
+      image : "images/jenkins.png"
+
+    # Loop technology
+    - title : "Ansible"
+      image : "images/ansible.png"
+
+    # Loop technology
+    - title : "Windows"
+      image : "images/windows.png"
+
+    # Loop technology
+    - title : "iOS"
+      image : "images/apple.png"
+
+    # Loop technology
+    - title : "Linux"
+      image : "images/linux.png"
+
+    # Loop technology
+    - title : "Amazon Web Services"
+      image : "images/aws.png"
+
+    # Loop technology
+    - title : "Google Cloud Provider"
+      image : "images/gcp.png"
+
+    # Loop technology
+    - title : "Microsoft Azure"
+      image : "images/kubernetes.png"
+
+    # Loop technology
+    - title : "Docker"
+      image : "images/docker_logo.png"
+
+    # Loop technology
+    - title : "Cloudflare"
+      image : "images/cloudflare.png"
+
+    # Loop technology
+    - title : "Prometheus"
+      image : "images/prometheus.png"
+
+    # Loop technology
+    - title : "Tilt"
+      image : "images/tilt_logo.png"
+
+    # Loop technology
+    - title : "LinkedIn"
+      image : "images/linkedin_logo.png"
+
+    # Loop technology
+    - title : "ChatGPT"
+      image : "images/chatgpt.png"
+
+    # Loop technology
+    - title : "Github"
+      image : "images/github_logo.png"
+
+    # Loop technology
+    - title : "Trunk"
+      image : "images/trunk_logo.png"
+
+    # Loop technology
+    - title : "Jira"
+      image : "images/jira_logo.png"
+
+    # Loop technology
+    - title : "ClickUp"
+      image : "images/clickup_logo.png"
+
+    # Loop technology
+    - title : "CircleCI"
+      image : "images/circleci_logo.png"
+
+
+languages:
+  title: "LANGUAGES I KNOW"
+  language_item:
+    # Loop language
+    - title : "Python"
+      image: "images/python.png"
+      percentage : "95"
+
+    # Loop language
+    - title : "Javascript"
+      image: "images/javascript.png"
+      percentage : "80"
+
+    # Loop language
+    - title : "C++"
+      image: "images/cplusplus.png"
+      percentage : "85"
+
+    # Loop language
+    - title : "R"
+      image: "images/r-logo.png"
+      percentage : "60"
+
+    # Loop langauge
+    - title : "PHP"
+      image: "images/php.png"
+      percentage : "80"
+
+    # Loop language
+    - title : "Java"
+      image: "images/java.png"
+      percentage : "75"
+
+    # Loop language
+    - title : "Bash"
+      image: "images/bash.png"
+      percentage : "90"
+
+    # Loop language
+    - title : "Regex Expression"
+      image: "images/regex.png"
+      percentage : "75"
+
+    # Loop language
+    - title : "STRUCTURED QUERY LANGUAGE"
+      image: "images/SQL.png"
+      percentage : "85"
+
+    # Loop language
+    - title : "GOLANG"
+      image: "images/golang_logo.png"
+      percentage : "85"
+
+    # Loop language
+    - title : "Css"
+      image: "images/css_logo.png"
+      percentage : "85"
+
+    # Loop language
+    - title : "HTML"
+      image: "images/html_logo.png"
+      percentage : "85"
+
+secure:
+  title: "SECURE YOUR ORGANIZATION."
+  subtitle1st: "As a DevOps Engineer, I specialize in helping organizations navigate the scope and complexity of their needs."
+  subtitle2nd: "I offer comprehensive expertise and consulting services to help them achieve their compliance objectives."
+  subtitle3rd: "Don't hesitate to start now and take the first step towards your organization's success."
