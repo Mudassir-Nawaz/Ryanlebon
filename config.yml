@@ -11,6 +11,14 @@ params:
         - link: css/font-awesome.min.css
         - link: css/animate.css
         - link: themefisher-font/style.css
+        js:
+        - link: js/bootstrap.min.js
+        - link: js/breakpoints.min.js
+        - link: js/browser.min.js
+        - link: js/custom.js
+        - link: js/jquery.min.js
+        - link: js/main.js
+        - link: js/util.js
 
     favicon: /images/logo.png
     favicon16x16: /images/logo.png
