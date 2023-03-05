@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://beautiful-elf-d77a5d.netlify.app/'
 languageCode = 'en-us'
 title = 'Ryan Lebon'
 
