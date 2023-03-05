@@ -1,0 +1,23 @@
+baseURL: '/'
+languageCode: 'en-us'
+title: 'Ryan Lebon'
+
+params:
+    logo: "images/logo.png"
+    plugins:
+        css:
+        - link: css/bootstrap.min.css
+        - link: css/main.css
+        - link: css/font-awesome.min.css
+        - link: css/animate.css
+menus:
+  main: # Main Menu
+  - name: Home
+    url: "/"
+    weight: "1"
+  - name: About
+    url: "/about/"
+    weight: "10"
+  - name: Service
+    url: "/service/"
+    weight: "11"
