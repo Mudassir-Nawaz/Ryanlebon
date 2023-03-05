@@ -8,7 +8,7 @@
             <div class="col-md-10 col-lg-8 text-center">
                 <h1 class="introduction">{{ .Params.bannerHeading }}</h1>
                 <h2 class="introduction">{{ .Params.bannerDiscription }}</h2>
-                <img class="img-fluid mb-4" src="{{.Params.bannerImage}}" alt="Iontra logo">
+                <img class="img-fluid mb-4" src="{{.Params.bannerImage | absURL}}" alt="Iontra logo">
             </div>
         </div>
     </div>
